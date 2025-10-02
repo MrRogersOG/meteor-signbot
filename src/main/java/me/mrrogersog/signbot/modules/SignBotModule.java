@@ -38,8 +38,7 @@ public class SignBotModule extends Module {
         .name("dispatch-delay")
         .description("Delay between dispatches in ticks (20 ticks = 1 second).")
         .defaultValue(40)
-        .min(5)
-        .max(200)
+        .range(5, 200)
         .build()
     );
 
