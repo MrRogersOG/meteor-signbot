@@ -27,6 +27,9 @@ dependencies {
 
     // Meteor
     modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
+
+    // Add this line for Baritone
+    modImplementation("cabaletta:baritone-api:1.2.15")
 }
 
 tasks {
