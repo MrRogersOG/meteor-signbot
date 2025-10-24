@@ -1,6 +1,10 @@
 name: Publish Development Build
 on: push
 
+# Add this permissions block to grant write access to the repository contents
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest

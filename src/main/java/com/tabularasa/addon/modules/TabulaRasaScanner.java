@@ -217,7 +217,6 @@ public class TabulaRasaScanner extends Module {
             BlockPos next = signQueue.remove(0);
             // Send Baritone to the next position
             BaritoneHelper.goTo(next);
-            // Log the action for debugging purposes
             log("[DISPATCHED] Baritone sent to " + next.toShortString());
         }
     }
