@@ -1,4 +1,3 @@
-
 package com.tabularasa.addon.helpers;
 
 import baritone.api.BaritoneAPI;
@@ -18,4 +17,6 @@ public class BaritoneHelper {
     public static boolean isPathing() {
         return BaritoneAPI.getProvider().getPrimaryBaritone().getPathingBehavior().isPathing();
     }
+
+    // Verify BaritoneAPI usage and ensure compatibility with the current version.
 }

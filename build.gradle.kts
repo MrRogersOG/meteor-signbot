@@ -34,6 +34,7 @@ dependencies {
     modImplementation("com.github.cabaletta:baritone:1.2.15")
 }
 
+// Verify and update dependencies for Meteor Client, Baritone, and Fabric.
 tasks {
     processResources {
         val propertyMap = mapOf(

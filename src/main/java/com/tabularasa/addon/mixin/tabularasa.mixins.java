@@ -11,3 +11,5 @@ import org.spongepowered.asm.mixin.Mixin;
 public abstract class TabulaRasaMixin {
     // Your future, specific mixin injections will go here.
 }
+
+// Rename this file to TabulaRasaMixin.java to match the public class name.

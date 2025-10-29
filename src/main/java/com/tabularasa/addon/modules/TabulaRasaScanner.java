@@ -1,5 +1,10 @@
 package com.tabularasa.addon.modules;
 
+public enum ScanMode {
+    RADIUS_SCAN,
+    CORRIDOR_SCAN
+}
+
 import com.tabularasa.addon.helpers.BaritoneHelper;
 import com.tabularasa.addon.scan.*;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
@@ -264,7 +269,7 @@ public class TabulaRasaScanner extends Module {
         signQueue.clear();
 
         // Iterate through all block entities in the world
-        for (BlockEntity entity : client.world.blockEntities) {
+        for (BlockEntity entity : client.world.getBlockEntities()) {
             // Check if entity is a sign
             if (entity instanceof SignBlockEntity sign) {
                 BlockPos pos = sign.getPos();
@@ -338,3 +343,9 @@ public class TabulaRasaScanner extends Module {
         client.inGameHud.getChatHud().addMessage(Text.of(message));
     }
 }
+
+// Verify that all methods annotated with @Override exist in the superclass or interface.
+// Ensure imports are correct and resolve missing classes.
+// Ensure ScanMode enum is correctly defined and used.
+// Replace direct access to blockEntities with an appropriate getter method or API.
+// Fix private access to blockEntities in TabulaRasaScanner.java
