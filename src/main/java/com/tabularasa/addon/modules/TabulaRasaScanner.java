@@ -36,8 +36,7 @@ public class TabulaRasaScanner extends Module {
     private final Setting<Boolean> scanSigns = sgGeneral.add(new BoolSetting.Builder()
         .name("Scan Signs")
         .description("Enable scanning for signs.")
-        .defaultValue(true)
-        .build());
+        .defaultValue(true)# Add this permissions block to grant write access to the repository contents
 
     /**
      * Setting to enable or disable automatic destruction of signs

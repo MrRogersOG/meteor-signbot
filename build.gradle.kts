@@ -17,6 +17,8 @@ repositories {
         name = "meteor-maven-snapshots"
         url = uri("https://maven.meteordev.org/snapshots")
     }
+    maven { url = uri("https://jitpack.io") }
+    maven { url = uri("https://repo.spongepowered.org/repository/maven-public/") }
 }
 
 dependencies {
@@ -28,8 +30,8 @@ dependencies {
     // Meteor
     modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
 
-    // Add this line for Baritone
-    modImplementation("cabaletta:baritone-api:1.2.15")
+    // Baritone
+    modImplementation("com.github.cabaletta:baritone:1.2.15")
 }
 
 tasks {

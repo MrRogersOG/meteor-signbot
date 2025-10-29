@@ -33,5 +33,4 @@ dependencyResolutionManagement {
 // This line tells Gradle the name of your project.
 rootProject.name = "TabulaRasa"
 
-// This line includes your build file.
-include(":build")
+
