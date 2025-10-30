@@ -1,10 +1,5 @@
 package com.tabularasa.addon.modules;
 
-public enum ScanMode {
-    RADIUS_SCAN,
-    CORRIDOR_SCAN
-}
-
 import com.tabularasa.addon.helpers.BaritoneHelper;
 import com.tabularasa.addon.scan.*;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
@@ -32,6 +27,11 @@ import java.util.List;
  * logs their content, and can optionally navigate to or destroy them.
  */
 public class TabulaRasaScanner extends Module {
+    public enum ScanMode {
+        RADIUS_SCAN,
+        CORRIDOR_SCAN
+    }
+
     // Create a settings group for general configuration
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
