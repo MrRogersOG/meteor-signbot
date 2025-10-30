@@ -5,5 +5,5 @@ repositories {
 }
 
 dependencies {
-    implementation name: 'baritone-api-fabric-1.15.0'
+    implementation files('libs/baritone-api-fabric-1.15.0.jar')
 }
