@@ -6,7 +6,7 @@ import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
-import meteordevelopment.meteorclient.systems.modules.Module.Category;
+import meteordevelopment.meteorclient.systems.modules.Categories;
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,12 +15,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 
-import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import meteordevelopment.meteorclient.utils.render.color.Color;
 
 /**
  * TabulaRasaScanner is a Minecraft module that scans for signs in the game world,
@@ -162,7 +162,7 @@ public class TabulaRasaScanner extends Module {
      * Initializes the module with name, category, and description
      */
     public TabulaRasaScanner() {
-        super("TabulaRasa", Category.MISC, "Scans signs and logs historical data.");
+        super("TabulaRasa", Categories.Misc, "Scans signs and logs historical data.");
     }
 
     /**
